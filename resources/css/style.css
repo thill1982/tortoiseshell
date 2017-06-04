@@ -17,6 +17,7 @@ html {
   background-position: center;
   height: 30rem;
 
+
 }
 
 .header {
@@ -24,6 +25,7 @@ html {
   background-color: cadetblue;
   display: flex;
   justify-content: space-between;
+
 }
 
 .header-box-left {
@@ -73,13 +75,9 @@ html {
 
 
 .feature-section {
-
-
   margin-top: 3rem;
     display:flex;
     justify-content: center;
-
-
 }
 
 
@@ -136,4 +134,107 @@ margin-bottom: 1rem;
 .footer-section img {
   padding: 4rem 1rem 4rem 4rem;
   height: 1.5rem;
+}
+
+.mobile-menu ul {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slogan-title h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+
+  }
+  .top-section {
+    height: 22rem;
+  }
+  .feature-section {
+      margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width:630px) {
+  .header-box-left h1 {
+  display: none;
+  }
+  .header-box-right ul {
+  display: none;
+  }
+
+  .header-box-right li {
+    padding: 1rem 2rem;
+
+  }
+  .mobile-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+
+  }
+
+  .mobile-menu li {
+    padding: 1rem 2rem;
+
+
+  }
+  .slogan-title h1 {
+    font-size: 1.33rem;
+    padding: 1rem 0;
+    margin-top: 9rem;
+    margin-right: 2rem;
+  }
+
+  .top-section {
+    height: 17rem;
+  }
+  .feature-section {
+    margin-top: 3rem;
+      display:flex;
+
+      flex-direction: column;
+      align-items: center;
+    }
+    .feature-box {
+    font-size: 0.77rem;
+        padding: 1rem 0;
+    }
+    .info-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .info-box {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+    .info-box h1 {
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    .info-box p {
+      font-size: 0.77rem;
+    }
+    .copyright {
+      display: none;
+    }
+    .footer-section {
+      justify-content: center;
+      align-items: center;
+    }
+    .header-box-left img {
+      height: 1.5rem;
+      padding: 1rem 2rem;
+    }
 }
